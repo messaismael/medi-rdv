@@ -1,0 +1,1799 @@
+{
+  "canvas": {
+    "version": "2.2.11",
+    "width": 2000,
+    "height": 2000,
+    "scrollTop": -363.4200159035472,
+    "scrollLeft": -328.3333333333335,
+    "zoomLevel": 0.9,
+    "show": {
+      "tableComment": true,
+      "columnComment": false,
+      "columnDataType": true,
+      "columnDefault": false,
+      "columnAutoIncrement": false,
+      "columnPrimaryKey": true,
+      "columnUnique": false,
+      "columnNotNull": true,
+      "relationship": true
+    },
+    "database": "MySQL",
+    "databaseName": "RDVdatabase",
+    "canvasType": "ERD",
+    "language": "GraphQL",
+    "tableCase": "pascalCase",
+    "columnCase": "camelCase",
+    "highlightTheme": "VS2015",
+    "bracketType": "none",
+    "setting": {
+      "relationshipDataTypeSync": true,
+      "relationshipOptimization": false,
+      "columnOrder": [
+        "columnName",
+        "columnDataType",
+        "columnNotNull",
+        "columnUnique",
+        "columnAutoIncrement",
+        "columnDefault",
+        "columnComment"
+      ]
+    },
+    "pluginSerializationMap": {}
+  },
+  "table": {
+    "tables": [
+      {
+        "name": "Patient",
+        "comment": "",
+        "columns": [
+          {
+            "name": "idPatient",
+            "comment": "",
+            "dataType": "INTEGER",
+            "default": "",
+            "option": {
+              "autoIncrement": true,
+              "primaryKey": true,
+              "unique": true,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "b20f2ba9-eee3-47fc-bd98-6e640e007ebf"
+          },
+          {
+            "name": "nomPatient",
+            "comment": "",
+            "dataType": "VARCHAR(30)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 67.76171875,
+              "widthComment": 60,
+              "widthDataType": 87.72509765625,
+              "widthDefault": 60
+            },
+            "id": "ab2d7b62-62a9-4959-90ad-1e0efb4b5e0d"
+          },
+          {
+            "name": "prenomPatient",
+            "comment": "",
+            "dataType": "VARCHAR(30)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 86.55078125,
+              "widthComment": 60,
+              "widthDataType": 87.72509765625,
+              "widthDefault": 60
+            },
+            "id": "20b4db39-b663-442e-b428-8d803b272d00"
+          },
+          {
+            "name": "dateNaissance",
+            "comment": "",
+            "dataType": "DATE",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 87.998046875,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "0ce35a31-1f6a-434b-bcb4-8fd20ac795cf"
+          },
+          {
+            "name": "sexe",
+            "comment": "",
+            "dataType": "ENUM('M', 'F')",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 84.85595703125,
+              "widthDefault": 60
+            },
+            "id": "a977dee1-a080-4d75-aeb7-327965eef2b0"
+          },
+          {
+            "name": "numTel",
+            "comment": "",
+            "dataType": "INTEGER",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "ad21c01a-24cb-40ce-be72-3396e0846855"
+          },
+          {
+            "name": "emailPatient",
+            "comment": "",
+            "dataType": "VARCHAR(30)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": true,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 73.5380859375,
+              "widthComment": 60,
+              "widthDataType": 87.72509765625,
+              "widthDefault": 60
+            },
+            "id": "82a65bcb-bc58-4076-a37d-c2a1c54baec3"
+          },
+          {
+            "name": "address",
+            "comment": "",
+            "dataType": "VARCHAR(50)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 87.72509765625,
+              "widthDefault": 60
+            },
+            "id": "b3816da5-4791-404c-a2de-b55d2ecfeee1"
+          },
+          {
+            "name": "motDePasse",
+            "comment": "",
+            "dataType": "VARCHAR(20)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 76.419921875,
+              "widthComment": 60,
+              "widthDataType": 87.72509765625,
+              "widthDefault": 60
+            },
+            "id": "36fd7f38-60ed-4a59-b26a-77a4725e6bbd"
+          },
+          {
+            "name": "created_at",
+            "comment": "",
+            "dataType": "TIMESTAMP",
+            "default": "CURRENT_TIMESTAMP",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 63.4326171875,
+              "widthComment": 60,
+              "widthDataType": 76.876953125,
+              "widthDefault": 147.65966796875
+            },
+            "id": "f14c3fe9-a243-478a-88d4-f7302449dd35"
+          },
+          {
+            "name": "updated_at",
+            "comment": "",
+            "dataType": "TIMESTAMP",
+            "default": "CURRENT_TIMESTAMP",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 67.0634765625,
+              "widthComment": 60,
+              "widthDataType": 76.876953125,
+              "widthDefault": 147.65966796875
+            },
+            "id": "bc876ee9-05ee-4970-a314-d7a0e53e17c7"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 267.7909,
+          "top": 408.7973,
+          "zIndex": 2,
+          "widthName": 60,
+          "widthComment": 60,
+          "color": "#2196F3"
+        },
+        "visible": true,
+        "id": "0f829447-2f2b-49a1-a9f9-c1d7f18849fd"
+      },
+      {
+        "name": "Medecin",
+        "comment": "",
+        "columns": [
+          {
+            "name": "idMedecin",
+            "comment": "",
+            "dataType": "INTEGER",
+            "default": "",
+            "option": {
+              "autoIncrement": true,
+              "primaryKey": true,
+              "unique": true,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 61.25537109375,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "32f04e3c-2cf4-4f25-a7ec-1ef0ab91afe7"
+          },
+          {
+            "name": "nomMedecin",
+            "comment": "",
+            "dataType": "VARCHAR(30)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 76.42626953125,
+              "widthComment": 60,
+              "widthDataType": 87.72509765625,
+              "widthDefault": 60
+            },
+            "id": "d6bd72df-96b7-4660-b805-1ba050726796"
+          },
+          {
+            "name": "prenomMedecin",
+            "comment": "",
+            "dataType": "VARCHAR(20)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 95.21533203125,
+              "widthComment": 60,
+              "widthDataType": 87.72509765625,
+              "widthDefault": 60
+            },
+            "id": "bc46678f-ed8e-4de3-a3d0-7593ac50606e"
+          },
+          {
+            "name": "emailMedecin",
+            "comment": "",
+            "dataType": "VARCHAR(30)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": true,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 82.20263671875,
+              "widthComment": 60,
+              "widthDataType": 87.72509765625,
+              "widthDefault": 60
+            },
+            "id": "721a753c-54be-4df6-a475-ab3619c31ab4"
+          },
+          {
+            "name": "sexe",
+            "comment": "",
+            "dataType": "ENUM('M', 'F')",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 84.85595703125,
+              "widthDefault": 60
+            },
+            "id": "22eee081-3c3e-4c6f-b347-19bb0ef240d0"
+          },
+          {
+            "name": "specialite",
+            "comment": "",
+            "dataType": "VARCHAR(20)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 87.72509765625,
+              "widthDefault": 60
+            },
+            "id": "5578ad24-527e-4e12-8e16-d7b34acab026"
+          },
+          {
+            "name": "numTel",
+            "comment": "",
+            "dataType": "INTEGER",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "79bf7ab7-3747-41f8-844e-f932f513b350"
+          },
+          {
+            "name": "motDePasse",
+            "comment": "",
+            "dataType": "VARCHAR(20)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 76.419921875,
+              "widthComment": 60,
+              "widthDataType": 87.72509765625,
+              "widthDefault": 60
+            },
+            "id": "b546c8ab-a8d8-4e90-9048-ee63f5ba4038"
+          },
+          {
+            "name": "created_at",
+            "comment": "",
+            "dataType": "TIMESTAMP",
+            "default": "CURRENT_TIMESTAMP",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 63.4326171875,
+              "widthComment": 60,
+              "widthDataType": 76.876953125,
+              "widthDefault": 147.65966796875
+            },
+            "id": "4df79e49-5985-4457-ab43-7788612ff087"
+          },
+          {
+            "name": "updated_at",
+            "comment": "",
+            "dataType": "TIMESTAMP",
+            "default": "CURRENT_TIMESTAMP",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 67.0634765625,
+              "widthComment": 60,
+              "widthDataType": 76.876953125,
+              "widthDefault": 147.65966796875
+            },
+            "id": "a77ec384-79fe-44db-a19d-0a956b699546"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 1422.6975,
+          "top": 410.804,
+          "zIndex": 5,
+          "widthName": 60,
+          "widthComment": 60,
+          "color": "#E91E63"
+        },
+        "visible": true,
+        "id": "56609cd5-eb5e-4afe-a244-b1d31c4ea594"
+      },
+      {
+        "name": "Rdv",
+        "comment": "",
+        "columns": [
+          {
+            "name": "idRdv",
+            "comment": "",
+            "dataType": "INTEGER",
+            "default": "",
+            "option": {
+              "autoIncrement": true,
+              "primaryKey": true,
+              "unique": true,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "ed6f21c3-d125-4936-adca-d577ffe65819"
+          },
+          {
+            "name": "objet",
+            "comment": "",
+            "dataType": "ENUM('Consultation', \"Suivi\")",
+            "default": "\"Consultation\"",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 170.796875,
+              "widthDefault": 83.49755859375
+            },
+            "id": "5224d46e-d25e-46e3-9259-7609adc1d65a"
+          },
+          {
+            "name": "active",
+            "comment": "",
+            "dataType": "BOOLEAN",
+            "default": "true",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 64.8544921875,
+              "widthDefault": 60
+            },
+            "id": "694a88a8-0cac-4432-9d10-68d34b1acb2c"
+          },
+          {
+            "name": "status",
+            "comment": "",
+            "dataType": "ENUM('ACCEPTER', 'REFUSER',  'ATTENTE', 'ANNULER')",
+            "default": "'ATTENTE'",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 347.36962890625,
+              "widthDefault": 65.22900390625
+            },
+            "id": "67444ed2-46f2-4b5a-8c70-169575a23f55"
+          },
+          {
+            "name": "dateTime",
+            "comment": "",
+            "dataType": "DATETIME",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 66.76513671875,
+              "widthDefault": 60
+            },
+            "id": "d73c1c3b-bb82-4714-ad27-843995d2226d"
+          },
+          {
+            "name": "idHoraire",
+            "comment": "",
+            "dataType": "INTEGER",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "62f886d5-bb8d-42d3-8c6a-55d5a7e4fd33"
+          },
+          {
+            "name": "idPatient",
+            "comment": "",
+            "dataType": "INTEGER",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "d5393c40-3338-40bd-bcf0-b48d830ae0b3"
+          },
+          {
+            "name": "idMedecin",
+            "comment": "",
+            "dataType": "INTEGER",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 61.25537109375,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "79e65236-f910-4ff3-a72c-ceca35a6ddce"
+          },
+          {
+            "name": "created_at",
+            "comment": "",
+            "dataType": "TIMESTAMP",
+            "default": "CURRENT_TIMESTAMP",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 63.4326171875,
+              "widthComment": 60,
+              "widthDataType": 76.876953125,
+              "widthDefault": 147.65966796875
+            },
+            "id": "e67f39f1-e173-4fe5-9474-60d92d5eb714"
+          },
+          {
+            "name": "updated_at",
+            "comment": "",
+            "dataType": "TIMESTAMP",
+            "default": "CURRENT_TIMESTAMP",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 67.0634765625,
+              "widthComment": 60,
+              "widthDataType": 76.876953125,
+              "widthDefault": 147.65966796875
+            },
+            "id": "4c059569-f5d3-4589-8958-a2b5369513fe"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 732.0063,
+          "top": 328.0546,
+          "zIndex": 7,
+          "widthName": 60,
+          "widthComment": 60,
+          "color": "#8BC34A"
+        },
+        "visible": true,
+        "id": "c4eb3833-8c01-4fb0-b900-eaa4944b0c06"
+      },
+      {
+        "name": "Ordonnance",
+        "comment": "",
+        "columns": [
+          {
+            "name": "idOrd",
+            "comment": "",
+            "dataType": "INTEGER",
+            "default": "",
+            "option": {
+              "autoIncrement": true,
+              "primaryKey": true,
+              "unique": true,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "474bc8b8-10fb-4db5-8549-aadfba96c2ec"
+          },
+          {
+            "name": "descOrd",
+            "comment": "",
+            "dataType": "VARCHAR(100)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 94.955078125,
+              "widthDefault": 60
+            },
+            "id": "b90e421f-b6b9-4afe-82f8-86d4f09a9771"
+          },
+          {
+            "name": "medocs",
+            "comment": "",
+            "dataType": "JSON",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "e34fb29e-ae0b-4fd8-9a5c-9de943815775"
+          },
+          {
+            "name": "examens",
+            "comment": "",
+            "dataType": "JSON",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "48944c45-fa7a-459e-88bd-bb18b3d2031b"
+          },
+          {
+            "name": "date",
+            "comment": "",
+            "dataType": "DATETIME",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 66.76513671875,
+              "widthDefault": 60
+            },
+            "id": "ab02df12-396b-46db-ad88-d21fba190514"
+          },
+          {
+            "name": "idRdv",
+            "comment": "",
+            "dataType": "INTEGER",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "123adcff-54da-44c3-85fa-18b38bcf1cf8"
+          },
+          {
+            "name": "idPatient",
+            "comment": "",
+            "dataType": "INTEGER",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "ff448a44-6157-40d8-89a7-bdca92482828"
+          },
+          {
+            "name": "idMedecin",
+            "comment": "",
+            "dataType": "INTEGER",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 61.25537109375,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "79a44c22-934c-474e-8a01-122b3a7acccf"
+          },
+          {
+            "name": "created_at",
+            "comment": "",
+            "dataType": "TIMESTAMP",
+            "default": "CURRENT_TIMESTAMP",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 63.4326171875,
+              "widthComment": 60,
+              "widthDataType": 76.876953125,
+              "widthDefault": 147.65966796875
+            },
+            "id": "1ff3c2b8-f4c3-48cb-b654-a64ae01331d7"
+          },
+          {
+            "name": "updated_at",
+            "comment": "",
+            "dataType": "TIMESTAMP",
+            "default": "CURRENT_TIMESTAMP",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 67.0634765625,
+              "widthComment": 60,
+              "widthDataType": 76.876953125,
+              "widthDefault": 147.65966796875
+            },
+            "id": "1ad62ec7-7fc1-4f5c-82d9-af67750b240a"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 857.5961,
+          "top": 757.3582,
+          "zIndex": 8,
+          "widthName": 73.55078125,
+          "widthComment": 60,
+          "color": "#9C27B0"
+        },
+        "visible": true,
+        "id": "d967d865-409b-4209-b71f-b75bbb8eea5d"
+      },
+      {
+        "name": "Medicament",
+        "comment": "",
+        "columns": [
+          {
+            "name": "idMedoc",
+            "comment": "",
+            "dataType": "INTEGER",
+            "default": "",
+            "option": {
+              "autoIncrement": true,
+              "primaryKey": true,
+              "unique": true,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "c105f1bb-b650-4c0b-8c2c-d20c452daec7"
+          },
+          {
+            "name": "nomMedoc",
+            "comment": "",
+            "dataType": "VARCHAR(20)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": true,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 66.30810546875,
+              "widthComment": 60,
+              "widthDataType": 87.72509765625,
+              "widthDefault": 60
+            },
+            "id": "18c96cf9-70d8-43df-9cf9-7d13f378c180"
+          },
+          {
+            "name": "descMedoc",
+            "comment": "",
+            "dataType": "VARCHAR(100)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 68.47900390625,
+              "widthComment": 60,
+              "widthDataType": 94.955078125,
+              "widthDefault": 60
+            },
+            "id": "a837665b-fac5-451a-a6c8-fe5c9c202a8c"
+          },
+          {
+            "name": "pu",
+            "comment": "",
+            "dataType": "INTEGER",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "88cd9db3-bcfa-46ea-8a3d-74665ff56d5b"
+          },
+          {
+            "name": "created_at",
+            "comment": "",
+            "dataType": "TIMESTAMP",
+            "default": "CURRENT_TIMESTAMP",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 63.4326171875,
+              "widthComment": 60,
+              "widthDataType": 76.876953125,
+              "widthDefault": 147.65966796875
+            },
+            "id": "2c807acc-e61e-4d65-949b-ad9a762925cb"
+          },
+          {
+            "name": "updated_at",
+            "comment": "",
+            "dataType": "TIMESTAMP",
+            "default": "CURRENT_TIMESTAMP",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 67.0634765625,
+              "widthComment": 60,
+              "widthDataType": 76.876953125,
+              "widthDefault": 147.65966796875
+            },
+            "id": "0d85e2c1-0e3f-4ad5-a143-3c86cbb4413d"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 365.7651,
+          "top": 1001.7478,
+          "zIndex": 3,
+          "widthName": 72.80810546875,
+          "widthComment": 60,
+          "color": "#607D8B"
+        },
+        "visible": true,
+        "id": "577dc8bb-99f6-41d8-8c26-e63113c6a629"
+      },
+      {
+        "name": "Admin",
+        "comment": "",
+        "columns": [
+          {
+            "name": "idAdmin",
+            "comment": "",
+            "dataType": "INTEGER",
+            "default": "",
+            "option": {
+              "autoIncrement": true,
+              "primaryKey": true,
+              "unique": true,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "cd4b59ce-e572-4dd2-ad91-6ffbb92eec83"
+          },
+          {
+            "name": "nomAdmin",
+            "comment": "",
+            "dataType": "VARCHAR(20)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 64.13720703125,
+              "widthComment": 60,
+              "widthDataType": 87.72509765625,
+              "widthDefault": 60
+            },
+            "id": "8f53703b-cc4b-4828-b56a-992e59a791c1"
+          },
+          {
+            "name": "emailAdmin",
+            "comment": "",
+            "dataType": "VARCHAR(30)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": true,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 69.91357421875,
+              "widthComment": 60,
+              "widthDataType": 87.72509765625,
+              "widthDefault": 60
+            },
+            "id": "ea203061-d56b-40e6-a2d4-ce59e8a38c06"
+          },
+          {
+            "name": "motDePasse",
+            "comment": "",
+            "dataType": "VARCHAR(255)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 76.419921875,
+              "widthComment": 60,
+              "widthDataType": 94.955078125,
+              "widthDefault": 60
+            },
+            "id": "47545c06-a1ad-4188-ad03-ca3e0ffcc020"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 848.2898,
+          "top": 1047.749,
+          "zIndex": 1,
+          "widthName": 60,
+          "widthComment": 60,
+          "color": "#FF9800"
+        },
+        "visible": true,
+        "id": "247cb8cb-e9a8-4c24-b7bd-2df3a9d25cf8"
+      },
+      {
+        "name": "Horaire",
+        "comment": "",
+        "columns": [
+          {
+            "name": "idHoraire",
+            "comment": "",
+            "dataType": "INTEGER",
+            "default": "",
+            "option": {
+              "autoIncrement": true,
+              "primaryKey": true,
+              "unique": true,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "312074fe-0927-4d6f-a84f-72df75314f81"
+          },
+          {
+            "name": "heure",
+            "comment": "",
+            "dataType": "TIME",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "22b9657f-dfc2-4da6-83f1-b7492a530fca"
+          },
+          {
+            "name": "idMedecin",
+            "comment": "",
+            "dataType": "INTEGER",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 61.25537109375,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "9fb0afd1-5bcf-419f-b44e-8d3326f60225"
+          },
+          {
+            "name": "created_at",
+            "comment": "",
+            "dataType": "TIMESTAMP",
+            "default": "CURRENT_TIMESTAMP",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 63.4326171875,
+              "widthComment": 60,
+              "widthDataType": 76.876953125,
+              "widthDefault": 147.65966796875
+            },
+            "id": "d646da9a-36f6-43f7-b391-7a5857b715df"
+          },
+          {
+            "name": "updated_at",
+            "comment": "",
+            "dataType": "TIMESTAMP",
+            "default": "CURRENT_TIMESTAMP",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 67.0634765625,
+              "widthComment": 60,
+              "widthDataType": 76.876953125,
+              "widthDefault": 147.65966796875
+            },
+            "id": "1f558643-c5e4-4794-92f8-6892ed276670"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 1360.1759,
+          "top": 1034.8703,
+          "zIndex": 4,
+          "widthName": 60,
+          "widthComment": 60,
+          "color": "#FFEB3B"
+        },
+        "visible": true,
+        "id": "0b02ca3b-9c03-4687-a29b-82ccb4f9e6ea"
+      },
+      {
+        "name": "Examen",
+        "comment": "",
+        "columns": [
+          {
+            "name": "idExamen",
+            "comment": "",
+            "dataType": "INTEGER",
+            "default": "",
+            "option": {
+              "autoIncrement": true,
+              "primaryKey": true,
+              "unique": true,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "21e3ad53-600e-42be-a6bc-146e1acc0ea4"
+          },
+          {
+            "name": "nomExamen",
+            "comment": "",
+            "dataType": "VARCHAR(60)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 74.97900390625,
+              "widthComment": 60,
+              "widthDataType": 87.72509765625,
+              "widthDefault": 60
+            },
+            "id": "44a3a80c-e34c-4c04-979a-506247aa94f1"
+          },
+          {
+            "name": "descExamen",
+            "comment": "",
+            "dataType": "VARCHAR(1000)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 77.14990234375,
+              "widthComment": 60,
+              "widthDataType": 102.18505859375,
+              "widthDefault": 60
+            },
+            "id": "d792f393-91b1-4aba-87e1-3fa550f0feb8"
+          },
+          {
+            "name": "prix",
+            "comment": "",
+            "dataType": "INTEGER",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "6c0b32b7-c97a-4abd-ae30-1fa29425b30a"
+          },
+          {
+            "name": "created_at",
+            "comment": "",
+            "dataType": "TIMESTAMP",
+            "default": "CURRENT_TIMESTAMP",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 63.4326171875,
+              "widthComment": 60,
+              "widthDataType": 76.876953125,
+              "widthDefault": 147.65966796875
+            },
+            "id": "ea1796a0-2016-41d0-a3a7-b3f190d1ff0d"
+          },
+          {
+            "name": "updated_at",
+            "comment": "",
+            "dataType": "TIMESTAMP",
+            "default": "CURRENT_TIMESTAMP",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 67.0634765625,
+              "widthComment": 60,
+              "widthDataType": 76.876953125,
+              "widthDefault": 147.65966796875
+            },
+            "id": "6ab80f31-5695-4db4-821c-9f10b8833ff8"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 383.7775,
+          "top": 790.8308,
+          "zIndex": 6,
+          "widthName": 60,
+          "widthComment": 60,
+          "color": "#607D8B"
+        },
+        "visible": true,
+        "id": "e807003c-0945-42e0-9913-c0044346df46"
+      }
+    ],
+    "indexes": []
+  },
+  "memo": {
+    "memos": []
+  },
+  "relationship": {
+    "relationships": [
+      {
+        "identification": false,
+        "relationshipType": "OneN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "56609cd5-eb5e-4afe-a244-b1d31c4ea594",
+          "columnIds": [
+            "32f04e3c-2cf4-4f25-a7ec-1ef0ab91afe7"
+          ],
+          "x": 1422.6975,
+          "y": 616.304,
+          "direction": "left"
+        },
+        "end": {
+          "tableId": "d967d865-409b-4209-b71f-b75bbb8eea5d",
+          "columnIds": [
+            "79a44c22-934c-474e-8a01-122b3a7acccf"
+          ],
+          "x": 1116.6146546875,
+          "y": 894.3582,
+          "direction": "right"
+        },
+        "constraintName": "fk_medecin_to_ordonnance",
+        "visible": true,
+        "id": "f114ea17-c69a-4f00-82cf-dadb12c8eacf"
+      },
+      {
+        "identification": false,
+        "relationshipType": "OneN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "56609cd5-eb5e-4afe-a244-b1d31c4ea594",
+          "columnIds": [
+            "32f04e3c-2cf4-4f25-a7ec-1ef0ab91afe7"
+          ],
+          "x": 1562.66771484375,
+          "y": 684.804,
+          "direction": "bottom"
+        },
+        "end": {
+          "tableId": "0b02ca3b-9c03-4687-a29b-82ccb4f9e6ea",
+          "columnIds": [
+            "9fb0afd1-5bcf-419f-b44e-8d3326f60225"
+          ],
+          "x": 1420.411007421875,
+          "y": 1034.8703,
+          "direction": "top"
+        },
+        "constraintName": "fk_medecin_to_horaire",
+        "visible": true,
+        "id": "757c8627-3235-4c22-b491-959a05520fd7"
+      },
+      {
+        "identification": false,
+        "relationshipType": "OneN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "0b02ca3b-9c03-4687-a29b-82ccb4f9e6ea",
+          "columnIds": [
+            "312074fe-0927-4d6f-a84f-72df75314f81"
+          ],
+          "x": 1540.881222265625,
+          "y": 1034.8703,
+          "direction": "top"
+        },
+        "end": {
+          "tableId": "c4eb3833-8c01-4fb0-b900-eaa4944b0c06",
+          "columnIds": [
+            "62f886d5-bb8d-42d3-8c6a-55d5a7e4fd33"
+          ],
+          "x": 1243.43940546875,
+          "y": 533.5545999999999,
+          "direction": "right"
+        },
+        "constraintName": "fk_horaire_to_rdv",
+        "visible": true,
+        "id": "1c8389d8-d599-4f6a-8342-a8b1c7b2846f"
+      },
+      {
+        "identification": false,
+        "relationshipType": "OneN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "0f829447-2f2b-49a1-a9f9-c1d7f18849fd",
+          "columnIds": [
+            "b20f2ba9-eee3-47fc-bd98-6e640e007ebf"
+          ],
+          "x": 540.51404453125,
+          "y": 482.4223,
+          "direction": "right"
+        },
+        "end": {
+          "tableId": "c4eb3833-8c01-4fb0-b900-eaa4944b0c06",
+          "columnIds": [
+            "d5393c40-3338-40bd-bcf0-b48d830ae0b3"
+          ],
+          "x": 732.0063,
+          "y": 465.0546,
+          "direction": "left"
+        },
+        "constraintName": "fk_patient_to_rdv",
+        "visible": true,
+        "id": "6edf936a-bef0-4197-a0d3-a893491d7653"
+      },
+      {
+        "identification": false,
+        "relationshipType": "OneN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "56609cd5-eb5e-4afe-a244-b1d31c4ea594",
+          "columnIds": [
+            "32f04e3c-2cf4-4f25-a7ec-1ef0ab91afe7"
+          ],
+          "x": 1422.6975,
+          "y": 479.304,
+          "direction": "left"
+        },
+        "end": {
+          "tableId": "c4eb3833-8c01-4fb0-b900-eaa4944b0c06",
+          "columnIds": [
+            "79e65236-f910-4ff3-a72c-ceca35a6ddce"
+          ],
+          "x": 1243.43940546875,
+          "y": 396.5546,
+          "direction": "right"
+        },
+        "constraintName": "fk_medecin_to_rdv",
+        "visible": true,
+        "id": "072f5b1c-d430-47aa-8e92-e9cf77fe86dd"
+      },
+      {
+        "identification": false,
+        "relationshipType": "OneN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "0f829447-2f2b-49a1-a9f9-c1d7f18849fd",
+          "columnIds": [
+            "b20f2ba9-eee3-47fc-bd98-6e640e007ebf"
+          ],
+          "x": 540.51404453125,
+          "y": 629.6723,
+          "direction": "right"
+        },
+        "end": {
+          "tableId": "d967d865-409b-4209-b71f-b75bbb8eea5d",
+          "columnIds": [
+            "ff448a44-6157-40d8-89a7-bdca92482828"
+          ],
+          "x": 857.5961,
+          "y": 894.3582,
+          "direction": "left"
+        },
+        "constraintName": "fk_patient_to_ordonnance",
+        "visible": true,
+        "id": "8a37a4ae-21c2-47d3-89dc-bd889ca89e6b"
+      },
+      {
+        "identification": false,
+        "relationshipType": "OneN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "c4eb3833-8c01-4fb0-b900-eaa4944b0c06",
+          "columnIds": [
+            "ed6f21c3-d125-4936-adca-d577ffe65819"
+          ],
+          "x": 987.722852734375,
+          "y": 602.0545999999999,
+          "direction": "bottom"
+        },
+        "end": {
+          "tableId": "d967d865-409b-4209-b71f-b75bbb8eea5d",
+          "columnIds": [
+            "123adcff-54da-44c3-85fa-18b38bcf1cf8"
+          ],
+          "x": 987.10537734375,
+          "y": 757.3582,
+          "direction": "top"
+        },
+        "constraintName": "fk_rdv_to_ordonnance",
+        "visible": true,
+        "id": "041c66ee-5316-42df-81c3-c9b4482409ee"
+      }
+    ]
+  }
+}
